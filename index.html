@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Linktree Sederhana</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #d9e4f5, #f7d9e3);
+            text-align: center;
+            min-height: 100vh;
+            animation: fadeIn 0.8s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        header {
+            padding: 2rem 1rem;
+            animation: floatIn 1s ease;
+        }
+
+        @keyframes floatIn {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        .profile-photo {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 1rem;
+            border: 3px solid #ddd;
+        }
+
+        .profile-name {
+            margin: 0;
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+
+        .profile-tagline {
+            margin-top: 0.3rem;
+            color: #555;
+        }
+
+        .links-list {
+            list-style: none;
+            padding: 0;
+            margin: 2rem auto;
+            max-width: 320px;
+        }
+
+        .links-list li {
+            margin: 0.8rem 0;
+        }
+
+        .links-list a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 0.9rem 1.2rem;
+            background: rgba(255,255,255,0.6);
+            backdrop-filter: blur(10px);
+            border-radius: 12px;
+            text-decoration: none;
+            font-size: 1rem;
+            color: #333;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+            transition: transform 0.15s ease, box-shadow 0.15s ease;
+        }
+
+        .links-list a:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+        }
+
+        audio {
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="Img/Sususapi sensei profile.jpg" alt="Foto Profil" class="profile-photo" />
+        <h1 class="profile-name">Sususapi</h1>
+        <p class="profile-tagline">Aku adalah sensei lulusan SD :3 Btw dibawah ada lagu silahkan di putar</p>
+    </header>
+
+    <main>
+        <ul class="links-list">
+            <li>
+                <a href="https://twitter.com/Sususapi234570" target="_blank">
+                    <span>🐦</span> Twitter
+                </a>
+            </li>
+
+            <li>
+                <a href="https://www.tiktok.com/@sususapisensei" target="_blank">
+                    <span>🎵</span> TikTok
+                </a>
+            </li>
+
+            <li>
+                <a href="https://www.roblox.com/users/5370925370/profile?friendshipSourceType=PlayerSearch" target="_blank">
+                    <span>🎮</span> Roblox
+                </a>
+            </li>
+        </ul>
+
+        <audio controls>
+            <source src="Music/Multo - Cup of Joe (Official Lyric Video).mp3" type="audio/mpeg">
+            Browser kamu tidak mendukung pemutar audio.
+        </audio>
+    </main>
+</body>
+</html>
